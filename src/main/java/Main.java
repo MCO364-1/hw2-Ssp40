@@ -1,4 +1,6 @@
+/// 8
 
+/// TESTS, DISC
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -15,7 +17,7 @@ class MyThread extends Thread {    // the entry point of a thread is run
     public void run() {
         for (int i = 0; i < LOOP_MAX; i++) {
             instanceCouter++;
-            synchronized("BathroomKey"){ // only one thread may enter at a time
+            synchronized("BathroomKey"){ /// no synchronizatuion for this hw..that is what is being tested!
             MyThread.sharedCounter++;
             }
             //System.out.println("T2: " + i);
